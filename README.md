@@ -1,1 +1,11 @@
 # Encrypt-Decrypt-Demo
+
+This is a basic Python security application that shows how symmetric and asymmetric encryption work. It also includes a simple login system and role based access control so different users have different permissions.
+
+When the program starts, the user is asked to log in with a username and password. If the login is successful, the program identifies the user’s role, such as admin or regular user. After that, the user enters a short message, and the application encrypts that message using two different methods. The first method is symmetric encryption, which uses the same key for both encryption and decryption. The second method is asymmetric encryption, which uses a public key to encrypt the message and a private key to decrypt it.
+
+The main goals of this assignment is to compare the strengths and weaknesses of symmetric and asymmetric encryption. Symmetric encryption is generally faster and more efficient, which makes it a good choice for encrypting larger amounts of data. However, its weakness is that both parties need access to the same secret key, and sharing that key securely can be difficult. Asymmetric encryption is more secure for key exchange because it separates the public key from the private key. The downside is that it is slower and less efficient than symmetric encryption, especially when handling larger amounts of data.
+
+This program also includes basic authentication by storing hashed passwords instead of plain text passwords. That means the program does not directly save the actual passwords, which is a safer approach. Even though this is still a simple demo, it reflects an important security practice used in real systems. At the same time, it is important to note that this project is meant for learning and is NOT production ready. In a real world application, password hashing should use stronger methods such as bcrypt, encryption keys should be stored securely, and user data should be managed in a secure database.
+
+To run the program, the cryptography Python package must be installed first. After that, the file can be executed normally through Python. The sample login credentials included in the program are admin1 / AdminPass123 and user1 / UserPass123. These accounts are there only for testing the login and role based access features.

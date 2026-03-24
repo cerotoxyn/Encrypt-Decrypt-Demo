@@ -1,0 +1,43 @@
+How to run the code:
+
+Install the required libraries 
+- pip install cryptography
+- python encrypt-decrypt.py
+
+Keys used:
+1. Fernet key 
+* Used to encrypt and decrypt the message, base64-encoded bytes
+
+2. RSA public key
+* Asymmetric public key, used to encrypt the message, shared openly in real systems. 
+
+3. RSA private key
+* Asymmetric private key, used to decrypt message, must be kept secret.
+
+4. Password hash
+* SHA-256 hash, used to verify login credentials without storing plain text passwords.
+
+Inputs:
+*username
+*password
+*short message to encrypt
+*menu option for decryption choice
+*symmetric key
+*RSA private key
+*RSA public key
+
+Outputs:
+*Authentication output 
+- login success/failure
+- user role shown after login 
+
+Encryption output:
+*original message
+*symmetric key 
+*symmetric ciphertext
+*RSA public key
+*RSA ciphertext 
+
+Decryption output:
+*decrypted message if user has permission
+*permission denied if user doesn't have required role 
